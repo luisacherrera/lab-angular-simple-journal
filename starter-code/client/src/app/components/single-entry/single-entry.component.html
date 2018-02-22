@@ -1,0 +1,9 @@
+<p *ngIf="!journal">
+  Loading
+</p>
+
+<ul *ngIf="journal">
+  <li>{{ journal.title }}</li>
+  <li>{{ journal.date }}</li>
+  <li>{{ journal.content }}</li>
+</ul>

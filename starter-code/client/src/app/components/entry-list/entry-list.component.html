@@ -1,0 +1,5 @@
+<ul *ngFor="let journal of journals">
+  <li> {{ journal.title }} </li>
+  <li> {{ journal.date }} </li>
+  <li><a [routerLink]="['/entry', journal._id]">Detail</a></li>
+</ul>
